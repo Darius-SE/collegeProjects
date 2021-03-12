@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Choose a Category</title>
+		<script src="category.js"></script>
+    </head>
+    <body>
+        <h1>Choose a Category</h1>
+
+        <p>Select a category to see the books in our inventory.</p>
+
+            <select id="category" onchange="databaseResult();">
+                <option>Fiction</option>
+                <option>Non-Fiction</option>
+                <option>Play</option>
+            </select>
+           <input type="submit" onclick="databaseResult()">
+
+        <br><br>
+        <h1>Output</h1>
+		<div id="status"></div>
+        <p id="output"></p>
+    </body>
+</html>
